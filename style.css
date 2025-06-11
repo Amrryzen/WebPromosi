@@ -1,0 +1,39 @@
+/* Font dan background utama */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FDFBF7;
+}
+
+/* Efek hover untuk kartu produk */
+.product-card {
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Gaya underline animasi untuk menu navbar */
+.nav-item {
+    position: relative;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -2px;
+    left: 0;
+    background-color: #FFB400;
+    transition: width 0.3s ease;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+/* Menandai menu aktif */
+.active::after {
+    width: 100%;
+}
